@@ -7,10 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        '3xl': '0 0 20px rgb(255 255 255/9%)',
+        '4xl': '0 0 20px rgb(256 256 256/30%)',
+      },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'hero-pattern': "url('/img/bg.jpg')",
       },
     },
   },
