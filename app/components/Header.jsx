@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -25,12 +26,15 @@ function Header() {
 
   return (
     <section
-      className={`h-[6rem] w-full transition-all duration-300   fixed ${
+      className={`h-[6rem] w-full transition-all duration-300 z-50 fixed  ${
         scroll ? " bg-black" : "bg-transparent"
       }`}
     >
       <div className="mx-[15rem]">
         <div className="flex justify-between">
+
+          {/* logo - img is here  */}
+
           <div className="mt-5">
             <Image
               src={img1}
@@ -39,28 +43,39 @@ function Header() {
               alt="logo"
             />
           </div>
+
+          {/* Navigation bar - start  */}
+
           <div className="mt-9">
             <ul className="flex gap-10 tracking-[1.5px]">
-              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]">
+              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]
+                transition-all duration-200">
                 <Link href={"#"}>Home</Link>
               </li>
-              <li className="text-[20px] font-bold text-[#B84C60] ">
+              <li className="text-[20px] font-bold text-[#B84C60]">
                 <Link href={"#"}>About</Link>
               </li>
-              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]">
+              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]
+                transition-all duration-200">
                 <Link href={"#"}>services</Link>
               </li>
-              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]">
+              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]
+                transition-all duration-200">
                 <Link href={"#"}>Portfolio</Link>
               </li>
-              <li className="text-[20px] font-bold text-white hover:text-[#B84C60] ">
+              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]
+                transition-all duration-200 ">
                 <Link href={"#"}>News</Link>
               </li>
-              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]">
+              <li className="text-[20px] font-bold text-white hover:text-[#B84C60]
+                transition-all duration-200">
                 <Link href={"#"}>Contact</Link>
               </li>
             </ul>
           </div>
+
+          {/* Navigation bar - start  */}
+          
         </div>
       </div>
     </section>

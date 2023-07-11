@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +23,9 @@ function About() {
         </div>
         <div className="pt-[8rem]">
           <div className="flex gap-16">
+
+            {/*flex 1 img section - start */}
+
             <div className="h-[520px] w-[435px] border-[12px] border-[#333333]">
               <Image
                 src={img1}
@@ -31,6 +35,11 @@ function About() {
                 className="-mt-[3rem] -ml-[1.5rem] h-[520px] w-[440px] "
               />
             </div>
+
+            {/*flex 1 img section - end */}
+
+            {/* flex 2 text section - start */}
+
             <div>
               <h2 className="text-[30px] font-semibold text-white ">
                 I'm Albert Walkers and
@@ -45,6 +54,11 @@ function About() {
                 acquired the skills and knowledge
                 <br /> necessary to make your project a success.
               </p>
+
+              {/* flex 2 text section - end  */}
+
+              {/* flex 2 address section - start */}
+
               <div className="mt-8 flex gap-7">
                 <div>
                   <div className="flex gap-3">
@@ -63,9 +77,8 @@ function About() {
                     </div>
                     <div className="mt-3 text-[22px] font-bold text-white tracking-[1px]">
                       Location:
-                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-white">
-                        {" "}
-                        44 Place, Plano, USA
+                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-[#999797]
+                        ml-2 pb-1">44 Place, Plano, USA
                       </span>
                     </div>
                   </div>
@@ -76,9 +89,7 @@ function About() {
                     </div>
                     <div className="mt-3 text-[22px] font-bold text-white tracking-[1px]">
                       Study:
-                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-white">
-                        {" "}
-                        Univercity of Chicago
+                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-[#999797] ml-2 pb-1">Univercity of Chicago
                       </span>
                     </div>
                   </div>
@@ -89,9 +100,7 @@ function About() {
                     </div>
                     <div className="mt-3 text-[22px] font-bold text-white tracking-[1.5px]">
                       Mail:
-                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-white">
-                        {" "}
-                        mymail@gmail.com
+                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-[#999797] ml-2 pb-1">mymail@gmail.com
                       </span>
                     </div>
                   </div>
@@ -134,23 +143,31 @@ function About() {
                     </div>
                     <div className="mt-3 text-[22px] font-bold text-white tracking-[1.5px]">
                       Phone:
-                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-white">
-                        {" "}
-                        +77 022 177 05 05
+                      <span className="text-[#7F7F7F] hover:border-b-2 hover:border-[#999797] ml-2 pb-1">+77 022 177 05 05
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* flex 2 address section - end  */}
+
+              {/* Download button - start */}
+
               <div className="mt-[4rem]">
                 <Link
                   href={"#"}
-                  className="text-[22px] font-semibold text-white p-5 px-16 border-2 border-[#B84C60] bg-[#B84C60] 
-                              hover:text-[#B84C60] hover:bg-white  transition-all duration-500"
+                  className="text-[22px] font-semibold text-white p-5 px-16
+                       border-2 border-[#ad364c] bg-[#B84C60] 
+                       hover:bg-[#ad364c] white  transition-all
+                       duration-300"
                 >
                   Download CV
                 </Link>
               </div>
+
+              {/* Download button - end  */}
+              
             </div>
           </div>
         </div>

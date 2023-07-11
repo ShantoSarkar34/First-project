@@ -1,3 +1,4 @@
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,6 +21,9 @@ function Portfolio() {
             Featured Works
           </h1>
         </div>
+
+        {/* Portfolio navbar - start  */}
+
         <div className="mt-40">
           <ul className="flex gap-10">
             <li className="text-[20px] font-bold tracking-[1px] text-[#B84C60]">
@@ -36,31 +40,39 @@ function Portfolio() {
             </li>
           </ul>
         </div>
-        <div className="mt-10 grid grid-cols-3 gap-20">
+
+        {/* Portfolio navbar - start  */}
+
+        {/* Portfolio image section - strt  */}
+
+        <div className="mt-10 grid grid-cols-3 gap-[50px]">
           <div className="mt-5">
-            <Image src={img1} alt="Pic 1" className="h-[390px] w-[385px]" />
+            <Image src={img1} alt="Pic 1" className="h-[450px] w-[400px]" />
           </div>
 
           <div className="mt-5">
-            <Image src={img2} alt="Pic 1" className="h-[390px] w-[385px]" />
+            <Image src={img2} alt="Pic 1" className="h-[450px] w-[400px]" />
           </div>
 
           <div className="mt-5">
-            <Image src={img3} alt="Pic 1" className="h-[390px] w-[385px]" />
+            <Image src={img3} alt="Pic 1" className="h-[450px] w-[400px]" />
           </div>
 
           <div className="mt-5">
-            <Image src={img4} alt="Pic 1" className="h-[390px] w-[385px]" />
+            <Image src={img4} alt="Pic 1" className="h-[450px] w-[400px]" />
           </div>
 
           <div className="mt-5">
-            <Image src={img5} alt="Pic 1" className="h-[390px] w-[385px]" />
+            <Image src={img5} alt="Pic 1" className="h-[450px] w-[400px]" />
           </div>
 
           <div className="mt-5">
-            <Image src={img6} alt="Pic 1" className="h-[390px] w-[385px]" />
+            <Image src={img6} alt="Pic 1" className="h-[450px] w-[400px]" />
           </div>
         </div>
+
+        {/* Portfolio image section - strt  */}
+        
       </div>
     </section>
   );
